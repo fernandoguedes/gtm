@@ -22,7 +22,7 @@
 		gtag('config', 'UA-154412305-1');
 	</script>
 
-	<script>(function (p, l, o, w, i, n, g) {
+	<script>(function (p, l, o, w, i, n, g, s) {
 			// Stop if the Snowplow namespace i already exists
 			if (!p[i]) {
 				// Initialise the 'GlobalSnowplowNamespace' array
@@ -34,7 +34,9 @@
 					(p[i].q = p[i].q || []).push(arguments);
 				};
 				// Initialise the asynchronous queue
-				p[i].q = p[i].q || [];
+				s = [['initTracker', "Guedes"], ['trackPageView']]
+
+				p[i].q = p[i].q || s;
 				// Create a new script element
 				n = l.createElement(o);
 				// Get the first script on the page

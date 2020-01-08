@@ -1,0 +1,35 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Captcha Test</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+</head>
+
+<body>
+  <form method="post" action="https://www.mocky.io/v2/5e16015934000070bb406991">
+    First name:<br>
+    <input type="text" name="firstname" value="Mickey"><br>
+    Last name:<br>
+    <input type="text" name="lastname" value="Mouse"><br><br>
+    <input type="hidden" name="action" value="validate_captcha">
+    <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
+    <input type="submit" id="teste" value="Submit">
+  </form>
+
+  <script src="https://www.google.com/recaptcha/api.js?render=6LcWPM0UAAAAAJZVq54QcCmJ9a3zWydfZMcJ15Bf"></script>
+  <script>
+    grecaptcha.ready(async function() {
+      try {
+        const token = await grecaptcha.execute('6LcWPM0UAAAAAJZVq54QcCmJ9a3zWydfZMcJ15Bf', {action: 'validate_captcha'})
+        document.getElementById('g-recaptcha-response').value = token;
+      } catch(e) {
+        console.log(e)
+      }
+    });
+  </script>
+</body>
+</html>

@@ -23,34 +23,34 @@
 		gtag('config', 'UA-154412305-1');
 	</script>
 
-	<script>(function (p, l, o, w, i, n, g, s) {
-			// Stop if the Snowplow namespace i already exists
-			if (!p[i]) {
-				// Initialise the 'GlobalSnowplowNamespace' array
-				p['GlobalSnowplowNamespace'] = p['GlobalSnowplowNamespace'] || [];
-				// Add the new Snowplow namespace to the global array so sp.js can find it
-				p['GlobalSnowplowNamespace'].push(i);
-				// Create the Snowplow function
-				p[i] = function () {
-					(p[i].q = p[i].q || []).push(arguments);
-				};
-				// Initialise the asynchronous queue
-				s = [['initTracker', "Guedes"], ['trackPageView']]
+<!--	<script>(function (p, l, o, w, i, n, g, s) {-->
+<!--			// Stop if the Snowplow namespace i already exists-->
+<!--			if (!p[i]) {-->
+<!--				// Initialise the 'GlobalSnowplowNamespace' array-->
+<!--				p['GlobalSnowplowNamespace'] = p['GlobalSnowplowNamespace'] || [];-->
+<!--				// Add the new Snowplow namespace to the global array so sp.js can find it-->
+<!--				p['GlobalSnowplowNamespace'].push(i);-->
+<!--				// Create the Snowplow function-->
+<!--				p[i] = function () {-->
+<!--					(p[i].q = p[i].q || []).push(arguments);-->
+<!--				};-->
+<!--				// Initialise the asynchronous queue-->
+<!--				s = [['initTracker', "Guedes"], ['trackPageView']]-->
 
-				p[i].q = p[i].q || s;
-				// Create a new script element
-				n = l.createElement(o);
-				// Get the first script on the page
-				g = l.getElementsByTagName(o)[0];
-				// The new script should load asynchronously
-				n.async = 1;
-				// Load Snowplow
-				n.src = w;
-				// Insert the Snowplow script before every other script so it executes as soon as possible
-				g.parentNode.insertBefore(n, g);
-			}
-		}(window, document, 'script', 'https://fguedes.me/gtm/sp.js', 'RD'));
-</script>
+<!--				p[i].q = p[i].q || s;-->
+<!--				// Create a new script element-->
+<!--				n = l.createElement(o);-->
+<!--				// Get the first script on the page-->
+<!--				g = l.getElementsByTagName(o)[0];-->
+<!--				// The new script should load asynchronously-->
+<!--				n.async = 1;-->
+<!--				// Load Snowplow-->
+<!--				n.src = w;-->
+<!--				// Insert the Snowplow script before every other script so it executes as soon as possible-->
+<!--				g.parentNode.insertBefore(n, g);-->
+<!--			}-->
+<!--		}(window, document, 'script', 'https://fguedes.me/gtm/sp.js', 'RD'));-->
+<!--	</script>-->
     <!-- End Google Tag Manager -->
 		<title>Eventually by HTML5 UP</title>
 		<meta charset="utf-8" />

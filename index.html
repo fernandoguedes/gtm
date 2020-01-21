@@ -15,11 +15,12 @@
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-154412305-1"></script>
 	<script async src="https://dk9suync0k2va.cloudfront.net/js/loader-scripts/d99f8b52-d410-49e5-9dab-f1feade20134-loader.js"></script>
+	<script async src="https://rdstation-static-dev.s3-sa-east-1.amazonaws.com/js/sauron-analytics/stable/sp.js"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
 		function gtag() { dataLayer.push(arguments); }
 		gtag('js', new Date());
-
+		gtag('require', 'spGaPlugin', { endpoint: 'https://eye.rd.services' });
 		gtag('config', 'UA-154412305-1');
 	</script>
 
